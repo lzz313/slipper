@@ -1,0 +1,3 @@
+run() {
+screen -S slipper-plugins-$(uuidgen)-remote-ssh ssh -R 10000:localhost:22 pi@host.me -p 9998
+}

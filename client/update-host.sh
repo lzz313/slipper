@@ -1,7 +1,6 @@
 #!/bin/bash
-username="e3rpay"
-domain="host.me"
-addr=$(curl https://raw.github.com/$username/slipper/master/server/addr)
+. profile
+addr=$(curl $addr_url)
 if [[ $(grep "^.*$domain" /etc/hosts) ]]; then
 sudo sed -i "s/^.*$domain/$addr\t$domain/g" /etc/hosts
 else
