@@ -1,3 +1,7 @@
 run() {
-screen -S slipper-plugins-$(uuidgen)-remote-ssh ssh -R 10000:localhost:22 pi@host.me -p 9998
+ps -ef | grep "slipper-plugins-.*-remote-ssh" | grep -v grep
+if [ $? != 0 ]; then
+    screen -S slipper-plugins-$(uuidgen)-remote-ssh \
+    ssh -R 10000:localhost:22 pi@host.me -p 9998
+fi
 }

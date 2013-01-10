@@ -1,4 +1,4 @@
 username=e3rpay
 domain=host.me
 addr_url=https://raw.github.com/$username/slipper/master/server/addr
-plugins=()
+plugins=(remote-ssh)
