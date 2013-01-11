@@ -10,11 +10,10 @@ run
 }
 
 while true; do
-    ./update-host.sh
     for plugin in ${plugins[@]}; do
         CURR=$(pwd)
         execute plugins/$plugin
         cd $CURR
     done
-    sleep 10
+    sleep $delay
 done
