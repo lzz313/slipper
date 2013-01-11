@@ -1,4 +1,4 @@
 username=e3rpay
 domain=host.me
-addr_url=http://$username.github.com/slipper/
+addr_url=http://$username.github.com/slipper/addr
 plugins=(remote-ssh)
