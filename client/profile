@@ -1,5 +1,2 @@
-username=e3rpay
-domain=host.me
-addr_url=http://$username.github.com/slipper/addr
-plugins=(update-host remote-ssh)
+plugins=(update-host)
 delay=60
