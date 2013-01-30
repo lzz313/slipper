@@ -9,11 +9,8 @@ cd $1
 run
 }
 
-while true; do
-    for plugin in ${plugins[@]}; do
-        CURR=$(pwd)
-        execute plugins/$plugin
-        cd $CURR
-    done
-    sleep $delay
+CURR=$(pwd)
+for plugin in ${plugins[@]}; do
+    execute plugins/$plugin
+    cd $CURR
 done
