@@ -7,7 +7,6 @@ cd $SLIPPER_HOME
 address=$(curl ifconfig.me)
 
 if [ -e $address ""]; then
-    echo "null"
     exit 1
 fi
 

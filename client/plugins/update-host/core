@@ -1,5 +1,8 @@
 run() {
 addr=$(curl $addr_url)
+if [ -e $addr "" ]; then
+    exit 1
+fi
 grep "^.*$domain" /etc/hosts
 if [ $? = 0 ]; then
     sudo sed -i "s/^.*$domain/$addr\t$domain/g" /etc/hosts
