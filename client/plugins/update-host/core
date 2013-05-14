@@ -1,6 +1,6 @@
 run() {
 addr=$(curl $addr_url)
-if [ -e $addr "" ]; then
+if [ $addr = "" ]; then
     exit 1
 fi
 grep "^.*$domain" /etc/hosts
