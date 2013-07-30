@@ -11,8 +11,8 @@ if [ -e $address "" ]; then
 fi
 
 cat << EOF > addr.js
-var slipper = {
-    addr: "$address"
+{
+    "addr": "$address"
 }
 EOF
 echo $address > addr
