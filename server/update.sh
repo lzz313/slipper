@@ -11,7 +11,7 @@ if [ -e $address "" ]; then
 fi
 
 cat << EOF > addr.js
-slipper = {
+var slipper = {
     addr: "$address"
 }
 EOF

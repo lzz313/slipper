@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script>
-  $.getScript("/slipper/addr.js", function(slipper) {
-    console.log(slipper.addr);
+  $.getScript("/slipper/addr.js", function($script) {
+    eval($script);
+    window.location.replace("http://"+slipper.addr+":808/");
   });
 </script>
