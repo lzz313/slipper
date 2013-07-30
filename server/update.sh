@@ -6,13 +6,13 @@ cd $SLIPPER_HOME
 
 address=$(curl ifconfig.me)
 
-if [ -e $address ""]; then
+if [ -e $address "" ]; then
     exit 1
 fi
 
 cat << EOF > addr.js
 slipper = {
-    "addr": "$address"
+    addr: "$address"
 }
 EOF
 echo $address > addr
