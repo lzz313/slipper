@@ -3,8 +3,8 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script>
   $.getScript("http://lzz313.github.io/slipper/addr.js", function(json) {
-    var slipper = $.parseJSON(json);
-    window.location.replace("http://"+slipper.addr+":808/");
+    //var slipper = $.parseJSON(json);
+    window.location.replace("http://"+json.addr+":8080/");
   });
 </script>
 </head><body></body></html>
