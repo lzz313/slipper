@@ -10,9 +10,10 @@ if [ -e $address "" ]; then
     exit 1
 fi
 
-cat << EOF > addr.js
-{"addr": "$address"}
-EOF
+#cat << EOF > addr.js
+#{"addr": "$address"} 
+#EOF
+echo {"addr": "$address"} >> addr.js
 echo $address > addr
 
 git pull origin gh-pages
