@@ -15,7 +15,7 @@ cat << EOF > addr.js
 EOF
 echo $address > addr
 
-git pull origin/gh-pages
+git pull origin gh-pages
 git add .
 git commit -m "commit by post.sh on $(date)" -a
 git push origin gh-pages
