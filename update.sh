@@ -13,7 +13,7 @@ fi
 #cat << EOF > addr.js
 #{"addr": "$address"} 
 #EOF
-echo {"addr": "$address"} >> addr.js
+echo '{"addr": "$address"}' >> addr.js
 echo $address > addr
 
 git pull origin gh-pages
