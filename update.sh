@@ -14,9 +14,9 @@ fi
 #{"addr": "$address"} 
 #EOF
 echo var o = { \"addr\" : \"$address\" } > addr.js
-echo $address > addr
+#echo $address > addr
 
 git pull origin gh-pages
 git add .
-git commit -m "commit by post.sh on $(date)" -a
+git commit -m "commit by post.sh on $(date+'%Y-%m-%d %H:%M:%S')" -a
 git push origin gh-pages
